@@ -2,9 +2,13 @@ package com.example.ChatApp.services;
 
 import com.example.ChatApp.entities.User;
 import com.example.ChatApp.repositories.UserRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
+@AllArgsConstructor
 public class UserServiceImp implements UserService{
     private UserRepository userRepository;
     @Override

@@ -19,13 +19,4 @@ public class User {
     @OneToMany
     private List<Message> receivedMessages;
 
-
-   public User(User user){
-       this.setEmail(user.getEmail());
-       this.setPassword(user.getPassword());
-       this.setUsername(user.getUsername());
-       this.setSentMessages(user.getSentMessages());
-       this.setReceivedMessages(user.getReceivedMessages());
-   }
-
 }
